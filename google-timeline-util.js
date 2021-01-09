@@ -66,7 +66,6 @@ activityTypes might be one of ${ACTIVITY_TYPES.join(" | ")}`
         .map((to) => to.activitySegment.distance)
         .reduce(sumFunc, 0) || 0;
     const currentMonth = path.basename(mp).replace(/[^A-Z]+/g, "");
-    console.log(currentMonth, sum);
     totalSum += sum;
     map[currentMonth] = sum;
   }
